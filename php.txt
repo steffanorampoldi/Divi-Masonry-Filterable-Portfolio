@@ -1,0 +1,9 @@
+/* Change portfolio image thumbnail size */
+function ds_portfolio_thumbnail_width( $width ) {
+    return 400; //portfolio thumbnail width
+}
+add_filter( 'et_pb_portfolio_image_width', 'ds_portfolio_thumbnail_width');
+function ds_portfolio_thumbnail_height( $height ) {
+    return 9999; //portfolio thumbnail height
+}
+add_filter( 'et_pb_portfolio_image_height', 'ds_portfolio_thumbnail_height');
